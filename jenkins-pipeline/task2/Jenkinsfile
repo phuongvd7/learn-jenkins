@@ -4,9 +4,11 @@ pipeline{
         stage('task1'){
             steps{
                 sh 'echo "Hello phuongvd7"'
-            }
+            }           
+        }
+        stage('task2'){
             steps {
-                sh 'echo "Hello task'
+                sh 'echo "Hello task2"'
             }
         }
     }
