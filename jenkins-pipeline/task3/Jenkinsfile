@@ -1,10 +1,9 @@
 pipeline {
     agent any
-    environment {
-        REGISTRY_NAME             = credentials('REGISTRY_NAME')
-        DOCKER_REGISTRY_USERNAME  = credentials('DOCKER_REGISTRY_USERNAME')
-        DOCKER_REGISTRY_PASSWORD  = credentials('DOCKER_REGISTRY_PASSWORD')
-    }
+    environment {    
+        REGISTRY_NAME            = credentials('REGISTRY_NAME')     
+        DOCKER_REGISTRY_USERNAME = credentials('DOCKER_REGISTRY_USERNAME')    
+        DOCKER_REGISTRY_PASSWORD = credentials('DOCKER_REGISTRY_PASSWORD') }  
     stages {
         stage('git-checkout') {
             steps {
