@@ -13,7 +13,7 @@ pipeline {
                 }
             }
         }
-        stages('docker-build/push-registry') {
+        stage('docker-build/push-registry') {
             steps {
                 sh ''' 
                 #!/usr/bin/env bash
